@@ -1,19 +1,23 @@
 # Neural_Network_Deep_Learning
 Francis Odo
 
-Background 
+Background
+
 Artificial Neural Networks or simply put Neural Networks is another technique of machine learning that recognize feature patterns in a set of input data, in the process provides a measured and quantified output. The Neural Network technique consist of collections of layered self-computing interconnected nodes. Output of one is input to another node.
 
 Objective
+
 The objective in this exercise is to build a machine learning model capable of analyzing and predicting the likelihood of a company or companies being successful using the provided (charity_data.csv) dataset. The essence of this is to use the information to support a clean and clear decision-making process with respect to which organization(s) are worth donating money to or being funded. Furthermore, we want to attempt to optimize and evaluate the model for better or improved performance. 
 
-Development Environment											
+Development Environment
+
 Python Pandas												
 TensorFlow												
 Jupyter Notebook											
 Data file (charity_data.csv)
 
 Code Plan
+
 The following is recommended guide for the code development. Some of the steps may be combined to achieve the same result. Note that the amount of preprocessing required depends on the how clean/dirty the data is.
 	1.Import dependencies and libraries.
 	2.Import the input dataset.
@@ -34,11 +38,14 @@ The following is recommended guide for the code development. Some of the steps m
 	17. Compile
 	18. Train
 	19. Evaluate
-	20. Tweak parameters for optimization purposes and evaluate	
+	20. Tweak parameters for optimization purposes and evaluate
+	
   
 Summary 
+
 Based on the size of the data and the input variables (features) I have 118 Neurons with 2 Hidden Layers.  Hidden Layer1 = 6, Hidden Layer 2 = 4. Epoch set to 100.	
 The first attempt of the evaluation yielded approximately 73% accuracy with the loss at about 55%. 		Loss: 0.5583208229381906, Accuracy: 0.7334110736846924
+
 
 Steps taken to optimize the model and increase performance (in bold One parameter at a time):
 (a)	Hidden Layer 1 = 6 Hidden layer 2 = 3 Epoch set to 200
@@ -59,6 +66,7 @@ Epoch 200/200
 25724/25724 [==============================] - 1s 36us/sample - loss: 0.5432 - acc: 0.7326
 8575/8575 - 3s - loss: 0.5547 - acc: 0.7334
 Loss: 0.5546591354320071, Accuracy: 0.7334110736846924 	        Outcome = No improvement
+
 
 
 (b)	Hidden Layer 1 = 8 Hidden layer 2 = 4 Epoch set to 200
@@ -107,6 +115,7 @@ Epoch 100/100
 8575/8575 - 0s - loss: 0.5456 - acc: 0.7306
 Loss: 0.5456023949228292, Accuracy: 0.7306122183799744	     Outcome = No improvement
 
+
 Optimization attempts were made by changing the values of hidden layer 1, hidden layer 2, Epoch and Activation. These attempts are highlighted in a, b and c above.
 There is a noticeable slight upward trend when the EPOCH was increased to 1000. However, due to limited computational power the result is not conclusive. I intend to continue to pursue this further on Google Colab to see if higher EPOCH could make a difference.
 Epoch 998/1000
@@ -117,5 +126,6 @@ Epoch 1000/1000
 804/804 [================] - 1s 1ms/step - loss: 0.5243 - accuracy: 0.7431
 268/268 - 0s - loss: 0.5475 - accuracy: 0.7331
 	Loss: 0.5475156307220459, Accuracy: 0.7330612540245056
+	
   
 My other choice of machine learning model to implement for this type of classification will be the Support Vector Machine (SVM). The reason being the fact that SVM appears to be very robust with binary classification, as well as dealing with overfitting challenges.  However, further investigation will be required to re-examine the input data to ascertain if the real problem is with binary classification or not.									
