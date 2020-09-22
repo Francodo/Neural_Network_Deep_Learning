@@ -18,7 +18,8 @@ Data file (charity_data.csv)
 
 Code Plan
 
-The following is recommended guide for the code development. Some of the steps may be combined to achieve the same result. Note that the amount of preprocessing required depends on the how clean/dirty the data is.
+The following is a recommended guide for the code development. Some of the steps may be combined to achieve the same result. Note that the amount of preprocessing required depends on the how clean/dirty the data is.
+
 	1.Import dependencies and libraries.
 	2.Import the input dataset.
 	3.Generate categorical variable list.
@@ -48,7 +49,9 @@ The first attempt of the evaluation yielded approximately 73% accuracy with the 
 
 
 Steps taken to optimize the model and increase performance (in bold One parameter at a time):
-(a)	Hidden Layer 1 = 6 Hidden layer 2 = 3 Epoch set to 200
+
+(a) Hidden Layer 1 = 6 Hidden layer 2 = 3 Epoch set to 200
+
 Model: "sequential_1"
 _________________________________________________________________
 Layer (type)                 Output Shape              Param #   
@@ -68,8 +71,7 @@ Epoch 200/200
 Loss: 0.5546591354320071, Accuracy: 0.7334110736846924 	        Outcome = No improvement
 
 
-
-(b)	Hidden Layer 1 = 8 Hidden layer 2 = 4 Epoch set to 200
+(b) Hidden Layer 1 = 8 Hidden layer 2 = 4 Epoch set to 200
 
 Model: "sequential_2"
 _________________________________________________________________
@@ -93,7 +95,7 @@ Epoch 100/100
 Loss: 0.5529235258324848, Accuracy: 0.7338775396347046	Outcome = No improvement
 
 
-        (c) Hidden Layer 1 = 8 Hidden layer 2 = 4 Epoch set to 100 	Activation = Tanh
+(c) Hidden Layer 1 = 8 Hidden layer 2 = 4 Epoch set to 100 	Activation = Tanh
 
 Model: "sequential_3"
 _________________________________________________________________
