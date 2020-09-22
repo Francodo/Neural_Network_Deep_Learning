@@ -119,7 +119,11 @@ Loss: 0.5456023949228292, Accuracy: 0.7306122183799744	     Outcome = No improve
 
 
 Optimization attempts were made by changing the values of hidden layer 1, hidden layer 2, Epoch and Activation. These attempts are highlighted in a, b and c above.
-There is a noticeable slight upward trend when the EPOCH was increased to 1000. However, due to limited computational power the result is not conclusive. I intend to continue to pursue this further on Google Colab to see if higher EPOCH could make a difference.
+
+There is a noticeable slight upward trend when the EPOCH was increased to 1000. 
+However, due to limited computational power the result is not conclusive. 
+I intend to continue to pursue this further on Google Colab to see if higher EPOCH could make a difference.
+
 Epoch 998/1000
 804/804 [================] - 1s 1ms/step - loss: 0.5241 - accuracy: 0.7439
 Epoch 999/1000
